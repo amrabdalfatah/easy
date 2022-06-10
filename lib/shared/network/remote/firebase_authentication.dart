@@ -18,7 +18,7 @@ class FirebaseAuthentication {
           .createUserWithEmailAndPassword(email: email, password: password);
       return credential.user!.uid;
     } on FirebaseAuthException {
-      return '';
+      return 'null';
     }
   }
 
